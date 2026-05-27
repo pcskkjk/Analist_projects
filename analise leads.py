@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 import os
 
-# Gera os dados fictícios de leads para simular uma base real de imobiliária
+# Gera os dados falsos
 def gerar_base_leads():
     dados = {
         "nome": [
