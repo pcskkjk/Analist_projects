@@ -2,7 +2,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 import os
+import subprocess
+import platform
 
+#clear no terminal pra uso de rotina
+def limpar_terminal():
+    cmd = 'cls' if platform.system() == 'Windows' else 'clear'
+    subprocess.run(cmd, shell=True)
+    
 # Gera os dados falsos
 def gerar_base_leads():
     dados = {
